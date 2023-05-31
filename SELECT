@@ -1,0 +1,35 @@
+SELECT * FROM ARTIST;
+OUTPUT
+ArtistID	LastName	FirstName	Nationality	DateOfBirth	DateDeceased
+1	Miro                     	Joan                     	Spanish                       	1893	1983
+2	Kandinsky                	Wassily                  	Russian                       	1866	1944
+3	Klee                     	Paul                     	German                        	1879	1940
+4	Matisse                  	Henri                    	French                        	1869	1954
+5	Chagall                  	Marc                     	French                        	1887	1985
+11	Sargent                  	John Singer              	United States                 	1856	1925
+17	Tobey                    	Mark                     	United States                 	1890	1976
+18	Horiuchi                 	Paul                     	United States                 	1906	1999
+19	Graves                   	Morris                   	United States                 	1920	2001
+
+
+SELECT * FROM ARTIST
+WHERE FirstName = 'PAUL';
+OUTPUT
+ArtistID	LastName	FirstName	Nationality	DateOfBirth	DateDeceased
+3	Klee                     	Paul                     	German                        	1879	1940
+18	Horiuchi                 	Paul                     	United States                 	1906	1999
+
+SELECT * 
+FROM ARTIST
+ORDER BY LastName;
+ArtistID	LastName	FirstName	Nationality	DateOfBirth	DateDeceased
+5	Chagall                  	Marc                     	French                        	1887	1985
+19	Graves                   	Morris                   	United States                 	1920	2001
+18	Horiuchi                 	Paul                     	United States                 	1906	1999
+2	Kandinsky                	Wassily                  	Russian                       	1866	1944
+3	Klee                     	Paul                     	German                        	1879	1940
+4	Matisse                  	Henri                    	French                        	1869	1954
+1	Miro                     	Joan                     	Spanish                       	1893	1983
+11	Sargent                  	John Singer              	United States                 	1856	1925
+17	Tobey                    	Mark                     	United States                 	1890	1976
+
