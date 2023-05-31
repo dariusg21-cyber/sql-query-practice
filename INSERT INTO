@@ -1,0 +1,12 @@
+INSERT INTO ARTIST
+VALUES('Gates', 'Darius', 'United States', 1990, 2080);
+
+succesful
+
+select * 
+from ARTIST 
+where firstname = 'darius';
+output
+ArtistID	LastName	FirstName	Nationality	DateOfBirth	DateDeceased
+20	Gates                    	Darius                   	United States                 	1990	2080
+
